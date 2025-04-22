@@ -28,11 +28,11 @@ Dokumentace přibližuje **strukturu adresářů** a fungování jednotlivých k
 - 🤖 **Trénování neuronové sítě** pro zisk postranní informace → [trenovani.md](./dokumentace/trenovani.md)  
 - 📊 **Testování hybridního systému** na připravených nahrávkách → [testovani.md](./dokumentace/testovani.md)  
 
-## ⚙️ Technické specifikace:  
+## ⚙️ Technické specifikace  
 💻 Kódy práce jsou napsány v **Pythonu (3.12.4)** 🐍 a **Matlabu (R2024b)** 📊.  
 📦 **Použité Python knihovny** jsou uvedeny v souboru **requirements.txt**.  
 
-## 🎯 Pro koho je repozitář určen?  
+## 🎯 Komu je repozitář určen?  
 Tento repozitář je určen především čtenářům bakalářské práce, kteří se zajímají o její konkrétní realizaci, především tedy:  
 👨‍🏫 **vedoucímu práce**,  
 🧐 **oponentovi práce**,  
