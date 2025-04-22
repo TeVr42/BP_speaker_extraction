@@ -22,7 +22,8 @@ class HybridSystemForExtraction():
     """
     def __init__(self, model_path, feature_extraction_params):
         self.model = MainSpeakerIntensity5Classifier(number_of_features=len(feature_extraction_params))
-        self.model.load_state_dict(torch.load(model_path, weights_only=True))
+        device_type = "cuda" if torch.cuda.is_available() else "cpu"
+        self.model.load_state_dict(torch.load(model_path, weights_only=True, map_location=torch.device(device_type)))
 
         self.feature_extraction_params = feature_extraction_params
 
