@@ -3,10 +3,10 @@ V rámci práce byla vytvořena vlastní databáze syntetických nahrávek řeč
 
 Skripty pro následující úkony jsou obsaženy v adresáři **matlab_scripts**
 
-Syntetické nahrávky jsou tvořeny z databáze Wall Street Journal dataset (MC-WSJ0-2mix), z části cv obsahující odhlučněné nahrávky 1 řečníka, pro vlastní generování je nutné mít k dispozici tyto nahrávky.
+Syntetické nahrávky jsou tvořeny z databáze [Wall Street Journal dataset](https://doi.org/10.1109/ICASSP.2016.7471631), konkrétně z verze [MC-WSJ0-2mix](https://doi.org/10.1109/ICASSP.2018.8461639), z části cv obsahující odhlučněné nahrávky 1 řečníka, pro vlastní generování je nutné mít k dispozici tyto nahrávky nebo jejich obdobu.
 
-## Příprava dat
-Před generováním dat je nutné vytvořit adresář s obsahem originálních nahrávek pojmenovaných určeným způsobem.
+## Příprava dat z WSJ0-2mix datasetu
+Při využití MC-WSJ0-2mix nahrávek je před generováním dat nutné vytvořit adresář s obsahem originálních nahrávek pojmenovaných určeným způsobem.
 
 1. Stáhněte soubor **wsj_data_clean.m**.
 2. Vytvořte cílový adresář pro uložení předzpracovaných nahrávek (např. "wsj_data").
@@ -15,6 +15,20 @@ Před generováním dat je nutné vytvořit adresář s obsahem originálních n
   - ```baseFolder``` je proměnná typu string obsahující název cílového adresáře, např.  ```"./wsj_data"```, <br>
   - ```destinationFolder``` je proměnná typu string obsahující název adresáře s WSJ0-2mix datasetem, např.  ```"./wsj0-2mix/cv"```.
 5. Pokud vše proběhlo v pořádku cílový adresář nyní obsahuje předzpracované soubory typu .wav s 8 znakovými názvy (složené z písmen a číslic).
+
+## Alternativa: Příprava dat s alternativním datasetem
+
+**Altarnativně** je možné využít jiný dataset než WSJ0-2mix. Vlastní dataset musí obsahovat nahrávky samostatných řečníků z prostředí bez reverberací. Při použítí alternativního datasetu je nutné nejprve předpřipravit názvy těchto nahrávek.
+
+1. Přejmenujte nahrávky dle následujících pravidel:
+- jména nahrávek musí mít jednotnou délku, delší než 3 znaky, například 8 znaků,
+- pokud 2 nahrávky pocházejí od stejného mluvčího, mají společné první 3 znaky, například *a12jk123* a *a12mo45s*,
+- pokud 2 nahrávky pocházejí od různých mluvčích, první 3 znaky jsou rozdílné,
+- soubory nesmí obsahovat více shodných nahrávek pod různými názvy.
+
+2. Přejmenované nahrávky umístěte do vybraného adresáře, např.  ```"./wsj_data"```.
+
+Takto připravený adresář s nahrávkami lze využít pro tvorbu nahrávek, dle následujícího postupu.
 
 ## Generování datasetu
 Pro vygenerování konkrétních dat z přezpracovaných WSJ nahrávek.

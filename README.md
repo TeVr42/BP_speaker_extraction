@@ -23,10 +23,10 @@ Dokumentace přibližuje **strukturu adresářů** a fungování jednotlivých k
 
 📜 **Detailní dokumenty:**  
 - 📌 **Ukázka použití hybridního systému** na ukázkových nahrávkách → [example.ipynb](./example.ipynb)  
-- 📁 **Struktura adresářů** → [struktura.md](./dokumentace/struktura.md)  
-- 🎤 **Generování vlastních uměle smíchaných nahrávek** → [generovani.md](./dokumentace/generovani.md)  
-- 🤖 **Trénování neuronové sítě** pro zisk postranní informace → [trenovani.md](./dokumentace/trenovani.md)  
-- 📊 **Testování hybridního systému** na připravených nahrávkách → [testovani.md](./dokumentace/testovani.md)  
+- 📁 **Struktura adresářů** → [struktura.md](./documentation/struktura.md)  
+- 🎤 **Generování vlastních uměle smíchaných nahrávek** → [generovani.md](./documentation/generovani.md)  
+- 🤖 **Trénování neuronové sítě** pro zisk postranní informace → [trenovani.md](./documentation/trenovani.md)  
+- 📊 **Testování hybridního systému** na připravených nahrávkách → [testovani.md](./documentation/testovani.md)  
 
 ## ⚙️ Technické specifikace  
 💻 Kódy práce jsou napsány v **Pythonu (3.12.4)** 🐍 a **Matlabu (R2024b)** 📊.  
