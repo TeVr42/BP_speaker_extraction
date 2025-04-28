@@ -6,10 +6,10 @@ Pokud jste dosud nestáhli obsah repozitáře:
 
 1. Stáněte obsah repozitáře bakalářské práce do vybaného adresáře.
 2. Nainstalujte potřebné knihovny Pythonu, ideálně do vytvořeného virtuálního prostředí (například dle souboru **requirements.txt** ```pip install -r requirements.txt```).
-3. Vytvořte soubor **data** na úrovni hlavního hlavního adresáře, do něj vytvořte soubor **train** (a případně **test**), do kterého nakopírujte vygenerované soubory s nahrávkami vytvořenými dle návodu [generovani.md](./generovani.md) (soubory s*.wav a y*.wav).
+3. Vytvořte adresář **data** v hlavním adresáři práce na úrovni s ostatními dílčimi adresáři. V adresáři **data** vytvořte adresář **train** (a případně **test**), do kterého nakopírujte vygenerované soubory s nahrávkami vytvořenými dle návodu [generovani.md](./generovani.md) (soubory *s\*.wav* a *y\*.wav*).
 
 ## Předzpracování dat
-1. Vytvořte soubor **preprocessed_data** na úrovni hlavního hlavního adresáře se soubory práce.
+1. Vytvořte adresář **preprocessed_data** v hlavním adresáři práce na úrovni s ostatními dílčimi adresáři.
 1. Otevřete adresář **data_preprocessing_scripts**.
 
 ### Předzpracujte příznaky: 

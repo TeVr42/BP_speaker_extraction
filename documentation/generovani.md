@@ -26,7 +26,7 @@ Při využití MC-WSJ0-2mix nahrávek je před generováním dat nutné vytvoři
 - pokud 2 nahrávky pocházejí od různých mluvčích, první 3 znaky jsou rozdílné,
 - soubory nesmí obsahovat více shodných nahrávek pod různými názvy.
 
-2. Přejmenované nahrávky umístěte do vybraného adresáře, např.  ```"./wsj_data"```.
+2. Přejmenované nahrávky umístěte do nového adresáře, např.  ```"./wsj_data"```, který musí obsahovat pouze tyto nahrávky.
 
 Takto připravený adresář s nahrávkami lze využít pro tvorbu nahrávek, dle následujícího postupu.
 
