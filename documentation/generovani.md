@@ -1,9 +1,9 @@
 # Generování syntetických dat
 V rámci práce byla vytvořena vlastní databáze syntetických nahrávek řečníka v hlučném prostředí. Pro vlastní trénování a testování jednotlivých částí práce je nutné použít syntetické nahrávky v původní databáze nebo vytvořené obdobným způsobem, zde je postup pro vytvoření vlastních nahrávek.
 
-Skripty pro následující úkony jsou obsaženy v adresáři **matlab_scripts**
+Skripty pro následující úkony jsou obsaženy v adresáři **matlab_scripts**.
 
-Syntetické nahrávky jsou tvořeny z databáze [Wall Street Journal dataset](https://doi.org/10.1109/ICASSP.2016.7471631), konkrétně z verze [MC-WSJ0-2mix](https://doi.org/10.1109/ICASSP.2018.8461639), z části cv obsahující odhlučněné nahrávky 1 řečníka, pro vlastní generování je nutné mít k dispozici tyto nahrávky nebo jejich obdobu.
+Syntetické nahrávky jsou tvořeny z databáze [Wall Street Journal dataset](https://doi.org/10.1109/ICASSP.2016.7471631), konkrétně z verze [MC-WSJ0-2mix](https://doi.org/10.1109/ICASSP.2018.8461639) ze sekce **cv** obsahující odhlučněné nahrávky 1 řečníka. Pro vlastní generování je nutné mít k dispozici tyto nahrávky nebo jejich obdobu.
 
 ## Příprava dat z WSJ0-2mix datasetu
 Při využití MC-WSJ0-2mix nahrávek je před generováním dat nutné vytvořit adresář s obsahem originálních nahrávek pojmenovaných určeným způsobem.

@@ -10,7 +10,7 @@ Pokud jste dosud nestáhli obsah repozitáře:
 
 Po úspěšné přípravě dat a instalaci potřebných knihoven pokračujte v souboru `data_analysis_scripts/evaluating_model.ipynb`:
 1. Spusťte první buňku souboru s potřebnými importy, buňka po úspěšném proběhnutí bude ukazovat symvol *Success*.
-2. V následující druhé buňce upravte počet nahrávek ```number_of_samples = 600```, dle Vámi vybraného počtu. Následně buňku spusťtě.
+2. V následující buňce upravte počet nahrávek ```number_of_samples = 600``` dle Vámi vybraného počtu. Následně buňku spusťtě.
 
 ## Spočítání referenčních hodnot SIR extrakce
 1. Spusťte buňku s definicí funkce ```get_SIR_for_basic_pilots(number_of_samples)```.
@@ -40,4 +40,4 @@ SIR_df['imp_SIR_ipd14_ipd17_ipd35_model_pilot'] = SIR_imp_model_pilot
 5. Tabulku uložte pomocí ```SIR_df.to_csv('../results/SIR_test.csv', index=True)```.
 
 ## Vizualizace výsledků
-Následující buňky obsahují vizualizaci spočítaných výsledků - přehled průměrů a krabicové grafy srovnání modelů a referenčních pilotů.
+Následující buňky obsahují vizualizaci spočítaných výsledků - přehled průměrů a krabicové grafy srovnání modelů a ukázkových pilotů.

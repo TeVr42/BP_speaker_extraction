@@ -2,6 +2,8 @@
 Zde je popsán postup vlastního trénování modelu krok za krokem, jeho následné použítí je přiblíženo v souboru [testovani.md](./testovani.md).
 
 ## Příprava repozitáře
+Pokud jste dosud nestáhli obsah repozitáře:
+
 1. Stáněte obsah repozitáře bakalářské práce do vybaného adresáře.
 2. Nainstalujte potřebné knihovny Pythonu, ideálně do vytvořeného virtuálního prostředí (například dle souboru **requirements.txt** ```pip install -r requirements.txt```).
 3. Vytvořte soubor **data** na úrovni hlavního hlavního adresáře, do něj vytvořte soubor **train** (a případně **test**), do kterého nakopírujte vygenerované soubory s nahrávkami vytvořenými dle návodu [generovani.md](./generovani.md) (soubory s*.wav a y*.wav).
@@ -22,7 +24,7 @@ Zde je popsán postup vlastního trénování modelu krok za krokem, jeho násle
 ### Předzpracujte piloty: 
 1. Otevřete soubor **data_preprocessing_scripts/SIR_pilot_preprocessing.ipynb**
 2. Spusťte úvodní buňku s importy a buňku s definicí funkce ```preprocess_data(number_of_data)```.
-3. Spusťte buňku s příkazem preprocess_data pro vybraný počet zpracovávaných nahrávek (stejný počet jako u příznaků).
+3. Spusťte buňku s příkazem *preprocess_data* pro vybraný počet zpracovávaných nahrávek (stejný počet jako u příznaků).
 
 ## Trénování sítě
 1. Otevřete adresář **training_scripts** v něm soubor **model_training.ipynb**.
@@ -42,5 +44,5 @@ Zde je popsán postup vlastního trénování modelu krok za krokem, jeho násle
 train_model("../preprocessed_data/", ["ipd17_", "ild17_"], "ipd17_ild17_model_ii", epochs=12, batch_size=32, learning_rate=0.001, data_split_coeff=0.7)
 ```
 6. Nechte dokončit trénování (na základě informačních výpisů je možné sledovat průběh).
-7. Natrénovaný model je uložen ve složce **models**, (jeho použití popisuje návod trenovani.md).
+7. Natrénovaný model je uložen ve složce **models**, (jeho použití popisuje návod [testovani.md](./testovani.md)).
 8. Pro vizualizaci průběhu učení je možné zobrazit obsah adresáře **runs** vytvořeného nástrojem Tensorboard, příkaz konzole: ```tensorboard --logdir=runs```.

@@ -19,17 +19,17 @@ Obecně se práce zabývá problémem **extrakce řečového signálu** hlavníh
 - 📊 Skripty pro vyhodnocení extrakce a analýzu problémů,
 - 🤖 Skripty pro trénování neuronových sítí vyvíjených v rámci práce.
 
-Dokumentace přibližuje **strukturu adresářů** a fungování jednotlivých kódů, případně kroky pro jejich použití.  
+Dokumentace přibližuje **strukturu adresářů**, fungování jednotlivých kódů a kroky pro jejich použití.  
 
 📜 **Detailní dokumenty:**  
 - 📌 **Ukázka použití hybridního systému** na ukázkových nahrávkách → [example.ipynb](./example.ipynb)  
 - 📁 **Struktura adresářů** → [struktura.md](./documentation/struktura.md)  
 - 🎤 **Generování vlastních uměle smíchaných nahrávek** → [generovani.md](./documentation/generovani.md)  
-- 🤖 **Trénování neuronové sítě** pro zisk postranní informace → [trenovani.md](./documentation/trenovani.md)  
+- 🤖 **Trénování neuronové sítě** pro zisk pilotujícího signálu → [trenovani.md](./documentation/trenovani.md)  
 - 📊 **Testování hybridního systému** na připravených nahrávkách → [testovani.md](./documentation/testovani.md)  
 
 ## ⚙️ Technické specifikace  
-💻 Kódy práce jsou napsány v **Pythonu (3.12.4)** 🐍 a **Matlabu (R2024b)** 📊.  
+💻 Zdrojové kódy práce jsou napsány v **Pythonu (3.12.4)** 🐍 a **Matlabu (R2024b)** 📊.  
 📦 **Použité Python knihovny** jsou uvedeny v souboru **requirements.txt**.  
 
 ## 🎯 Komu je repozitář určen?  
